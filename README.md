@@ -6,7 +6,7 @@
 
 # ust-id
 
-> Validates the German VAT-ID (Umsatzsteuer-Identifikationsnummer)
+> Validates the German VAT-ID (Umsatzsteuer-Identifikationsnummer, short: USt-ID)
 
 Check digit (last digit) is validated based on [ISO/IEC 7064, MOD 11,10](https://www.iso.org/standard/31531.html) as documented within the meanwhile repealed "Datenträger-Verordnung über die Abgabe Zusammenfassender Meldungen – ZMDV" dated 13.05.1993 ([BGBl. I S. 736](https://www.bgbl.de/xaver/bgbl/start.xav?start=%2F%2F*%5B%40attr_id%3D%27bgbl193s0726.pdf%27%5D#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl193s0726.pdf%27%5D__1720528216746)).
 
