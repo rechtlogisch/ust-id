@@ -10,7 +10,8 @@
 
 Check digit (last digit) is validated based on [ISO/IEC 7064, MOD 11,10](https://www.iso.org/standard/31531.html) as documented within the meanwhile repealed "Datenträger-Verordnung über die Abgabe Zusammenfassender Meldungen – ZMDV" dated 13.05.1993 ([BGBl. I S. 736](https://www.bgbl.de/xaver/bgbl/start.xav?start=%2F%2F*%5B%40attr_id%3D%27bgbl193s0726.pdf%27%5D#__bgbl__%2F%2F*%5B%40attr_id%3D%27bgbl193s0726.pdf%27%5D__1720528216746)).
 
-Hint: This package validates solely the syntax and check digit of the provided input. It does not confirm, that the provided USt-ID was assigned to an entrepreneur. Please use the official [VIES](https://ec.europa.eu/taxation_customs/vies/) service for that.
+> [!NOTE]
+> This package validates solely the syntax and check digit of the provided input. It does not confirm, that the provided USt-ID was assigned to an entrepreneur. Please use the official [VIES](https://ec.europa.eu/taxation_customs/vies/) service for that.
 
 ## Installation
 
@@ -40,7 +41,8 @@ use Rechtlogisch\UstId\UstId;
 
 You can get a list of errors explaining why the provided input is invalid. The `validate()` method returns a DTO with a `getErrors()` method.
 
-Hint: The keys of `getErrors()` hold the stringified reference to the exception class. You can check for a particular error by comparing to the ::class constant. For example: `Rechtlogisch\UstId\Exceptions\InvalidUstIdLength::class`.
+> [!NOTE]
+> The keys of `getErrors()` hold the stringified reference to the exception class. You can check for a particular error by comparing to the ::class constant. For example: `Rechtlogisch\UstId\Exceptions\InvalidUstIdLength::class`.
 
 ```php
 validateUstId('DE12345678')->getErrors();
