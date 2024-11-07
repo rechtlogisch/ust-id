@@ -20,7 +20,7 @@ class UstId
     public function __construct(
         public string $input
     ) {
-        $this->result = new ValidationResult();
+        $this->result = new ValidationResult;
 
         try {
             $this->guard();

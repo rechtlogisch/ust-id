@@ -37,7 +37,7 @@ it('returns false for an invalid ust-id', function (string $ustId) {
 
 it('throws a type error when nothing provided as ust-id', function () {
     /** @noinspection PhpParamsInspection */
-    new UstId(); /** @phpstan-ignore-line */
+    new UstId; /** @phpstan-ignore-line */
 })->throws(TypeError::class);
 
 it('throws a type error when null provided as ust-id', function () {
