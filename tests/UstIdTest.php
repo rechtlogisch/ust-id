@@ -99,7 +99,7 @@ it('returns false and specific error message when input to long', function (stri
     'DE12345678901',
 ]);
 
-it('returns false and specific error message when a ust-id contains non-digits after DE', function (string $ustId) {
+it('returns false and specific error message when an ust-id contains non-digits after DE', function (string $ustId) {
     $result = (new UstId($ustId))->validate();
 
     expect($result->isValid())->toBeFalse()

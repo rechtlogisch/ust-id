@@ -2,7 +2,7 @@
 
 use Rechtlogisch\UstId\Dto\ValidationResult;
 
-it('validates a ust-id with the global validateUstId() function', function (string $ustId) {
+it('validates an ust-id with the global validateUstId() function', function (string $ustId) {
     $result = validateUstId($ustId);
 
     expect($result)->toBeInstanceOf(ValidationResult::class)
@@ -10,7 +10,7 @@ it('validates a ust-id with the global validateUstId() function', function (stri
         ->and($result->getErrors())->toBeEmpty();
 })->with('valid');
 
-it('validates a ust-id with the global isValidUstId() function', function (string $ustId) {
+it('validates an ust-id with the global isValidUstId() function', function (string $ustId) {
     $result = isUstIdValid($ustId);
 
     expect($result)->toBeTrue();

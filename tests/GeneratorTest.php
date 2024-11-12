@@ -2,7 +2,7 @@
 
 use Rechtlogisch\UstId\UstId;
 
-it('generates a ust-id with check digit `0`', function () {
+it('generates an ust-id with check digit `0`', function () {
     $class = new ReflectionClass(UstId::class);
     try {
         $method = $class->getMethod('checkDigit');
