@@ -24,7 +24,7 @@ composer require rechtlogisch/ust-id
 ## Usage
 
 ```php
-isUstIdValid('DE123456789'); // => true
+isUstIdValid('DE123456788'); // => true
 ```
 
 or
@@ -32,7 +32,7 @@ or
 ```php
 use Rechtlogisch\UstId\UstId;
 
-(new UstId('DE123456789'))
+(new UstId('DE123456788'))
     ->validate() // ValidationResult::class
     ->isValid(); // => true
 ```
